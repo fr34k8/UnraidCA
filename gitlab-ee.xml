@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>Gitlab-ee</Name>
+  <Repository>gitlab/gitlab-ee</Repository>
+  <Registry>https://hub.docker.com/r/gitlab/gitlab-ee</Registry>
+  <Network>br0</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://github.com/PugPickles/UnraidCA/issues/new</Support>
+  <Project>https://github.com/PugPickles/UnraidCA/tree/Gitlab-ee</Project>
+  <Overview>This is an intigration for unraid ca, basically it is the original docker image packaged for community apps</Overview>
+  <Category>Cloud: Productivity:</Category>
+  <WebUI>https://[IP]</WebUI>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/PugPickles/UnraidCA/Gitlab-ee/icon.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1669393812</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="HTTP Port" Target="" Default="80" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">80</Config>
+  <Config Name="HTTPS Port" Target="" Default="443" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">443</Config>
+  <Config Name="SSH Port" Target="" Default="22" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">22</Config>
+  <Config Name="Hostname" Target="hostname" Default="gitlab.example.com" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">gitlab.example.com</Config>
+  <Config Name="Name" Target="name" Default="gitlab" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">gitlab</Config>
+  <Config Name="Restart" Target="restart" Default="always" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">always</Config>
+  <Config Name="Config path" Target="/etc/gitlab" Default="/mnt/user/appdata/gitlab-ee/config" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/gitlab-ee/config</Config>
+  <Config Name="Log path" Target="/var/log/gitlab" Default="/mnt/user/appdata/gitlab-ee/logs" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/gitlab-ee/logs</Config>
+  <Config Name="Data path" Target="/var/opt/gitlab" Default="/mnt/user/appdata/gitlab-ee/data" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/gitlab-ee/data</Config>
+</Container>
