@@ -1,0 +1,117 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>PaperMC</Name>
+  <Repository>pickl3s/papermc</Repository>
+  <Registry>https://hub.docker.com/r/pickl3s/papermc</Registry>
+  <Network>br0</Network>
+  <MyIP></MyIP>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://github.com/PugPickles/UnraidCA/issues/new</Support>
+  <Project>https://github.com/PugPickles/UnraidCA/tree/PaperMC</Project>
+  <Overview>Lightweight papermc minecraft server, based on alpine 3.17.&#xD;
+&#xD;
+All settings can be changed via environment variables&#xD;
+&#xD;
+(Including the server version and build)&#xD;
+&#xD;
+you can change the server.properties file by clicking on "Show more settings ..."&#xD;
+&#xD;
+---&#xD;
+## OP Level:&#xD;
+* level 1 - can bypass spawn protection&#xD;
+* level 2 - can use more commands and command blocks&#xD;
+* level 3 - can use more commands. (Multiplayer management)&#xD;
+* level 4 - can use all of the commands. (Server management)&#xD;
+---&#xD;
+# &amp;lt;span style="color:red"&amp;gt;----- WARNING -----&amp;lt;/span&amp;gt;&#xD;
+If you have already built something and want to change settings&#xD;
+Do not stop the container!&#xD;
+Go like this to prevent a new world from being generated!&#xD;
+&#xD;
+Enter the following 2 commands in the game (as op):&#xD;
+1. /save-all&#xD;
+2. /stop&#xD;
+&#xD;
+# &amp;lt;span style="color:red"&amp;gt;----- WARNING -----&amp;lt;/span&amp;gt;</Overview>
+  <Category>GameServers:</Category>
+  <WebUI/>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/PugPickles/UnraidCA/PaperMC/icon.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1669228840</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="OP User" Target="MC_OP_USER" Default="" Mode="" Description="Your username, so that you are OP on the server" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="OP UUID" Target="MC_OP_UUID" Default="" Mode="" Description="Your UUID" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="OP Level" Target="MC_OP_LEVEL" Default="1" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">1</Config>
+  <Config Name="Plugins folder" Target="/srv/mc/plugins" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/papermc/plugins</Config>
+  <Config Name="World folder" Target="/srv/mc/world" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/papermc/world</Config>
+  <Config Name="Nether world folder" Target="/srv/mc/world_nether" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/papermc/world_nether</Config>
+  <Config Name="End world folder" Target="/srv/mc/world_the_end" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/papermc/world_the_end</Config>
+  <Config Name="Server version" Target="SRV_VERSION" Default="1.19.2" Mode="" Description="Version of the papermc.jar file" Type="Variable" Display="always" Required="false" Mask="false">1.19.2</Config>
+  <Config Name="Server build" Target="SRV_BUILD" Default="280" Mode="" Description="Build of the selected server version" Type="Variable" Display="always" Required="false" Mask="false">280</Config>
+  <Config Name="Initial memory allocation" Target="SRV_XMS" Default="2G" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">2G</Config>
+  <Config Name="Maximum memory allocation" Target="SRV_XMX" Default="2G" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">2G</Config>
+  <Config Name="Server port" Target="25565" Default="25565" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">25565</Config>
+  <Config Name="Query port" Target="25565" Default="25565" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">25565</Config>
+  <Config Name="Rcon port" Target="25575" Default="25575" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">25575</Config>
+  <Config Name="enable-jmx-monitoring" Target="enable_jmx_monitoring" Default="false" Mode="" Description="" Type="Variable" Display="advanced-hide" Required="false" Mask="false">false</Config>
+  <Config Name="rcon.port" Target="rcon_port" Default="25575" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">25575</Config>
+  <Config Name="level-seed" Target="level_seed" Default="" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false"/>
+  <Config Name="gamemode" Target="gamemode" Default="survival" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">creative</Config>
+  <Config Name="enable-command-block" Target="enable_command_block" Default="false" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">false</Config>
+  <Config Name="enable-query" Target="enable_query" Default="false" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">false</Config>
+  <Config Name="generator-settings" Target="generator_settings" Default="{}" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">{}</Config>
+  <Config Name="enforce-secure-profile" Target="enforce_secure_profile" Default="true" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">true</Config>
+  <Config Name="motd" Target="motd" Default="A_Minecraft_Server" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">PMC_dev</Config>
+  <Config Name="query.port" Target="query_port" Default="25565" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">25565</Config>
+  <Config Name="pvp" Target="pvp" Default="true" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">true</Config>
+  <Config Name="generate-structures" Target="generate_structures" Default="true" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">true</Config>
+  <Config Name="max-chained-neighbor-updates" Target="max_chained_neighbor_updates" Default="1000000" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">1000000</Config>
+  <Config Name="difficulty" Target="difficulty" Default="easy" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">easy</Config>
+  <Config Name="network-compression-threshold" Target="network_compression_threshold" Default="256" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">256</Config>
+  <Config Name="max-tick-time" Target="max_tick_time" Default="60000" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">60000</Config>
+  <Config Name="require-resource-pack" Target="require_resource_pack" Default="false" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">false</Config>
+  <Config Name="use-native-transport" Target="use_native_transport" Default="true" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">true</Config>
+  <Config Name="max-players" Target="max_players" Default="20" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">20</Config>
+  <Config Name="online-mode" Target="online_mode" Default="true" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">true</Config>
+  <Config Name="enable-status" Target="enable_status" Default="true" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">true</Config>
+  <Config Name="allow-flight" Target="allow_flight" Default="false" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">false</Config>
+  <Config Name="broadcast-rcon-to-ops" Target="broadcast_rcon_to_ops" Default="true" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">true</Config>
+  <Config Name="view-distance" Target="view_distance" Default="10" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">10</Config>
+  <Config Name="server-ip" Target="server_ip" Default="" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false"/>
+  <Config Name="resource-pack-prompt" Target="resource_pack_prompt" Default="" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false"/>
+  <Config Name="allow-nether" Target="allow_nether" Default="true" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">true</Config>
+  <Config Name="server-port" Target="server_port" Default="25565" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">25565</Config>
+  <Config Name="enable-rcon" Target="enable_rcon" Default="false" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">false</Config>
+  <Config Name="sync-chunk-writes" Target="sync_chunk_writes" Default="true" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">true</Config>
+  <Config Name="op-permission-level" Target="op_permission_level" Default="4" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">4</Config>
+  <Config Name="prevent-proxy-connections" Target="prevent_proxy_connections" Default="false" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">false</Config>
+  <Config Name="hide-online-players" Target="hide_online_players" Default="false" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">false</Config>
+  <Config Name="resource-pack" Target="resource_pack" Default="" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false"/>
+  <Config Name="entity-broadcast-range-percentage" Target="entity_broadcast_range_percentage" Default="100" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">100</Config>
+  <Config Name="simulation-distance" Target="simulation_distance" Default="10" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">10</Config>
+  <Config Name="rcon.password" Target="rcon_password" Default="" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false"/>
+  <Config Name="player-idle-timeout" Target="player_idle_timeout" Default="0" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">0</Config>
+  <Config Name="debug" Target="debug" Default="false" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">false</Config>
+  <Config Name="force-gamemode" Target="force_gamemode" Default="false" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">false</Config>
+  <Config Name="rate-limit" Target="rate_limit" Default="0" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">0</Config>
+  <Config Name="hardcore" Target="hardcore" Default="false" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">false</Config>
+  <Config Name="white-list" Target="white_list" Default="false" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">false</Config>
+  <Config Name="broadcast-console-to-ops" Target="broadcast_console_to_ops" Default="true" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">true</Config>
+  <Config Name="spawn-npcs" Target="spawn_npcs" Default="true" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">true</Config>
+  <Config Name="previews-chat" Target="previews_chat" Default="false" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">false</Config>
+  <Config Name="spawn-animals" Target="spawn_animals" Default="true" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">true</Config>
+  <Config Name="function-permission-level" Target="function_permission_level" Default="2" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">2</Config>
+  <Config Name="level-type" Target="level_type" Default="minecraft\:normal" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">minecraft\:normal</Config>
+  <Config Name="text-filtering-config" Target="text_filtering_config" Default="" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false"/>
+  <Config Name="spawn-monsters" Target="spawn_monsters" Default="true" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">true</Config>
+  <Config Name="enforce-whitelist" Target="enforce_whitelist" Default="false" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">false</Config>
+  <Config Name="spawn-protection" Target="spawn_protection" Default="16" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">16</Config>
+  <Config Name="resource-pack-sha1" Target="resource_pack_sha1" Default="" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false"/>
+  <Config Name="max-world-size" Target="max_world_size" Default="29999984" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">29999984</Config>
+</Container>
