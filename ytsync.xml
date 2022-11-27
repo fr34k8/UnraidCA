@@ -7,14 +7,14 @@
   <MyIP/>
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
-  <Support/>
+  <Support>https://github.com/PugPickles/UnraidCA/issues/new</Support>
   <Project>https://github.com/PugPickles/UnraidCA/tree/YTSync</Project>
   <Overview>Sync youtube playlists locally, files can be downloaded as mp3 or mp4.&#xD;
 Practical for e.g. Jellyfin</Overview>
   <Category>Downloaders:</Category>
   <WebUI>http://[IP]:[PORT:8095]</WebUI>
   <TemplateURL/>
-  <Icon>https://raw.githubusercontent.com/PugPickles/UnraidCA/0845d6f76ff45a020706ee6d374d7b5327aac8df/icon.png</Icon>
+  <Icon>https://raw.githubusercontent.com/PugPickles/UnraidCA/YTSync/icon.png</Icon>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
