@@ -21,9 +21,9 @@
   <DonateText/>
   <DonateLink/>
   <Requires/>
-  <Config Name="HTTP Port" Target="" Default="80" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">80</Config>
-  <Config Name="HTTPS Port" Target="" Default="443" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">443</Config>
-  <Config Name="SSH Port" Target="" Default="22" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">22</Config>
+  <Config Name="HTTP Port" Target="80" Default="80" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">80</Config>
+  <Config Name="HTTPS Port" Target="443" Default="443" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">443</Config>
+  <Config Name="SSH Port" Target="22" Default="22" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">22</Config>
   <Config Name="Hostname" Target="hostname" Default="gitlab.example.com" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">gitlab.example.com</Config>
   <Config Name="Name" Target="name" Default="gitlab" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">gitlab</Config>
   <Config Name="Restart" Target="restart" Default="always" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">always</Config>
