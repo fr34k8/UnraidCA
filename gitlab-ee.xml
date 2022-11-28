@@ -8,7 +8,7 @@
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
   <Support>https://github.com/PugPickles/UnraidCA/issues/new</Support>
-  <Project>https://github.com/PugPickles/UnraidCA/tree/Gitlab-ee</Project>
+  <Project>https://about.gitlab.com/</Project>
   <Overview>This is an intigration for unraid ca, basically it is the original docker image packaged for community apps</Overview>
   <Category>Cloud: Productivity:</Category>
   <WebUI>https://[IP]</WebUI>
