@@ -1,6 +1,5 @@
 <?xml version="1.0"?>
 <Container version="2">
-  <Beta>True</Beta>
   <Name>YTSync</Name>
   <Repository>pickl3s/ytsync:latest</Repository>
   <Registry>https://hub.docker.com/r/pickl3s/ytsync</Registry>
@@ -8,24 +7,28 @@
   <MyIP/>
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
-  <Support>https://github.com/PugPickles/UnraidCA/issues/new</Support>
-  <Project>https://github.com/PugPickles/UnraidCA/tree/YTSync</Project>
-  <Overview>Sync youtube playlists locally, files can be downloaded as mp3 or mp4.&#xD;
-Practical for e.g. Jellyfin</Overview>
-  <Category>Downloaders:</Category>
+  <Support/>
+  <Project/>
+  <Overview>Automated download of youtube playlists.&#xD;
+You can specify a separate path for each playlist (within the root directory).&#xD;
+Videos can be downloaded as mp3 or mp4.&#xD;
+The schedule is managed by a cronjob.&#xD;
+There is a Discord webhook integration to be informed about changes or newly downloaded videos/audio</Overview>
+  <Category/>
   <WebUI>http://[IP]:[PORT:8095]</WebUI>
   <TemplateURL/>
   <Icon>https://raw.githubusercontent.com/PugPickles/UnraidCA/YTSync/icon.png</Icon>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1667667777</DateInstalled>
+  <DateInstalled>1669835227</DateInstalled>
   <DonateText/>
   <DonateLink/>
   <Requires/>
-  <Config Name="Media root dir." Target="/MEDIA_ROOT" Default="" Mode="rw" Description="The main directory where the folders of the media (music, videos) are located" Type="Path" Display="always" Required="true" Mask="false"/>
-  <Config Name="WebUI Port" Target="8095" Default="8095" Mode="tcp" Description="The port through which the website is accessible" Type="Port" Display="advanced" Required="false" Mask="false">8095</Config>
-  <Config Name="WebUI Port" Target="WEB_PORT" Default="8095" Mode="" Description="Change port for website" Type="Variable" Display="advanced" Required="false" Mask="false">8095</Config>
-  <Config Name="API Port" Target="40123" Default="40123" Mode="tcp" Description="The port through which the API is accessible" Type="Port" Display="advanced" Required="false" Mask="false">40123</Config>
-  <Config Name="API Port" Target="API_PORT" Default="40123" Mode="" Description="Change port for API" Type="Variable" Display="advanced" Required="false" Mask="false">40123</Config>
+  <Config Name="Media root" Target="/MEDIA_ROOT" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false"/>
+  <Config Name="Config" Target="/CONFIG" Default="/mnt/user/appdata/ytsync" Mode="rw" Description="" Type="Path" Display="advanced" Required="false" Mask="false">/mnt/user/appdata/ytsync</Config>
+  <Config Name="WebUI Port" Target="8095" Default="8095" Mode="tcp" Description="" Type="Port" Display="advanced" Required="false" Mask="false">8095</Config>
+  <Config Name="API Port" Target="API_PORT" Default="40123" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">40123</Config>
+  <Config Name="API Port" Target="40123" Default="40123" Mode="tcp" Description="" Type="Port" Display="advanced" Required="false" Mask="false">40123</Config>
+  <Config Name="WebUI Port" Target="WEB_PORT" Default="8095" Mode="" Description="" Type="Variable" Display="advanced" Required="false" Mask="false">8095</Config>
 </Container>
