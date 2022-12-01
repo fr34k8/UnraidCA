@@ -8,14 +8,14 @@
   <MyIP/>
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
-  <Support/>
-  <Project/>
+  <Support>https://github.com/PugPickles/UnraidCA/issues/new</Support>
+  <Project>https://github.com/PugPickles/UnraidCA/tree/PaperMC</Project>
   <Overview>Automated download of youtube playlists.&#xD;
 You can specify a separate path for each playlist (within the root directory).&#xD;
 Videos can be downloaded as mp3 or mp4.&#xD;
 The schedule is managed by a cronjob.&#xD;
 There is a Discord webhook integration to be informed about changes or newly downloaded videos/audio</Overview>
-  <Category/>
+  <Category>Downloaders:</Category>
   <WebUI>http://[IP]:[PORT:8095]</WebUI>
   <TemplateURL/>
   <Icon>https://raw.githubusercontent.com/PugPickles/UnraidCA/YTSync/icon.png</Icon>
