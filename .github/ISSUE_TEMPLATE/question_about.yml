@@ -1,0 +1,31 @@
+name: Question
+description: If you need help 
+title: "[Question]: "
+labels: ["question"]
+assignees:
+  - PugPickles
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this bug report!
+  - type: input
+    id: app
+    attributes:
+      label: Name of the app
+      placeholder: ex. YTSync
+    validations:
+      required: true
+  - type: textarea
+    id: question
+    attributes:
+      label: How can I help?
+      placeholder: I need help with...
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant log output
+      description: You can also insert relevant log output. This will be automatically formatted into code, so no need for backticks.
+      render: shell
