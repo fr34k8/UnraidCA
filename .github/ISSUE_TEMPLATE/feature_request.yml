@@ -1,0 +1,27 @@
+name: Feature Request
+description: Suggest an idea for this project 
+title: "[Idea]: "
+labels: ["enhancement"]
+assignees:
+  - PugPickles
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this bug report!
+  - type: input
+    id: app
+    attributes:
+      label: Name of the app
+      placeholder: ex. YTSync
+    validations:
+      required: true
+  - type: textarea
+    id: idea
+    attributes:
+      label: Suggest an idea for this project 
+      description: Please be as accurate as possible
+      placeholder: I would like...
+      value: "I would like..."
+    validations:
+      required: true
