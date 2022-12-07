@@ -22,6 +22,5 @@ body:
       label: Suggest an idea for this project 
       description: Please be as accurate as possible
       placeholder: I would like...
-      value: "I would like..."
     validations:
       required: true
