@@ -1,5 +1,5 @@
 name: Bug Report
-description: File a bug report
+description: Create a bug report
 title: "[Bug]: "
 labels: ["bug"]
 assignees:
@@ -13,7 +13,6 @@ body:
     id: app
     attributes:
       label: Name of the app
-      description: which app is it
       placeholder: ex. YTSync
     validations:
       required: true
