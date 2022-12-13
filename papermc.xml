@@ -14,6 +14,8 @@
 &#xD;
 All settings can be changed via environment variables&#xD;
 &#xD;
+You can put the server icon (server-icon.png) in the backupData mount (/mnt/user/appdata/papermc/backupData)&#xD;
+&#xD;
 (Including the server version and build)&#xD;
 &#xD;
 you can change the server.properties file by clicking on "Show more settings ..."&#xD;
