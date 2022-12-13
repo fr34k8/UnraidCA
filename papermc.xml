@@ -1,5 +1,6 @@
 <?xml version="1.0"?>
 <Container version="2">
+  <Beta>True</Beta>
   <Name>PaperMC</Name>
   <Repository>pickl3s/papermc</Repository>
   <Registry>https://hub.docker.com/r/pickl3s/papermc</Registry>
@@ -48,6 +49,7 @@ Enter the following 2 commands in the game (as op):&#xD;
   <Config Name="OP User" Target="MC_OP_USER" Default="" Mode="" Description="Your username, so that you are OP on the server" Type="Variable" Display="always" Required="false" Mask="false"/>
   <Config Name="OP UUID" Target="MC_OP_UUID" Default="" Mode="" Description="Your UUID" Type="Variable" Display="always" Required="false" Mask="false"/>
   <Config Name="OP Level" Target="MC_OP_LEVEL" Default="1" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">1</Config>
+  <Config Name="Config data" Target="/srv/mc/backupData" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/papermc/backupData</Config>
   <Config Name="Plugins folder" Target="/srv/mc/plugins" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/papermc/plugins</Config>
   <Config Name="World folder" Target="/srv/mc/world" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/papermc/world</Config>
   <Config Name="Nether world folder" Target="/srv/mc/world_nether" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/papermc/world_nether</Config>
