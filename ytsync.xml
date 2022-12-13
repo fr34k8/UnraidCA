@@ -8,7 +8,7 @@
   <MyIP/>
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
-  <Support>https://github.com/PugPickles/UnraidCA/issues/new</Support>
+  <Support>https://github.com/PugPickles/UnraidCA/issues/new/choose</Support>
   <Project>https://github.com/PugPickles/UnraidCA/tree/PaperMC</Project>
   <Overview>Automated download of youtube playlists.&#xD;
 You can specify a separate path for each playlist (within the root directory).&#xD;
