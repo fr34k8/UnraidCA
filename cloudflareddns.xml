@@ -26,5 +26,6 @@
   <Config Name="Zone ID" Target="zone_id" Default="" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false"/>
   <Config Name="FQDN" Target="domain" Default="" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false"/>
   <Config Name="Records" Target="records" Default="A, AAAA" Mode="" Description="" Type="Variable" Display="always" Required="true" Mask="false">A, AAAA</Config>
+  <Config Name="Proxied" Target="proxied" Default="true" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">true</Config>
   <Config Name="Update time (Minutes)" Target="update_time" Default="5" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">5</Config>
 </Container>
