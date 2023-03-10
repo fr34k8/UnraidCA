@@ -1,4 +1,3 @@
-# UnraidCA
-Here are all my apps for the community app store from unraid
-
-Look in the branches to see the code for each app
+# ----- ATTENTION -----
+### The development on this profile will be stopped
+### The profile will be deleted end of the month (31.03.23), icludes Docket Hub
